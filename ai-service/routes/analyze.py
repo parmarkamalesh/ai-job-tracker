@@ -3,8 +3,8 @@ from typing import Any
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from services.claude_service import score_resume as score_resume_svc
-from services.claude_service import skill_suggestions as skill_suggestions_svc
+from services.groq_service import score_resume as score_resume_svc
+from services.groq_service import skill_suggestions as skill_suggestions_svc
 
 router = APIRouter(prefix="/analyze", tags=["analyze"])
 
